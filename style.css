@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(253, 89, 212);
+    width: 256pt;
+    height: 512pt;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'ヒラギノ角ゴ ProN W6';
+    font-weight: bold;
+    font-size: 35pt;
+    color: white;
+    margin-bottom: 0pt;
+}
+#datebox{
+    text-align: center;
+    margin: 0pt;
+}
+#date {
+    font-family: 'FreeSans', 'メイリオ', 'ヒラギノ角ゴ ProN W6';
+    font-weight: bold;
+    font-size: 15pt;
+    color: white;
+    margin-bottom: 0pt;
+    margin-top: 0pt;
+    text-align: center;
+}
+
+#time {
+    font-weight: bold;
+    font-size: 85pt;
+    text-align: center;
+    color: white;
+    font-family: 'FreeSans', 'メイリオ', 'ヒラギノ角ゴ ProN W6';
+    margin-top: 0pt;
+}

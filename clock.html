@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title></title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>OBS-Casting</h1>
+    <div id="datebox">
+        <p id="date" />
+    </div>
+    <p id="time" />
+    <script language="JavaScript">
+    var yyyymmddhhmiss = function() {
+        var date = new Date();
+        var yyyy = date.getFullYear();
+        var mm = toDoubleDigits(date.getMonth() + 1);
+        var dd = toDoubleDigits(date.getDate());
+        var hh = toDoubleDigits(date.getHours());
+        var mi = toDoubleDigits(date.getMinutes());
+        var ss = toDoubleDigits(date.getSeconds())
+        var date = document.getElementById("date");
+        var time = document.getElementById("time");
+        date.innerHTML = yyyy + '年' + mm + '月' + dd + '日 (JST)';
+        time.innerHTML = hh + ':' + mi;
+
+    };
+    var toDoubleDigits = function(num) {
+        num += "";
+        if (num.length === 1) {
+            num = "0" + num;
+        }
+        return num;
+    };
+    setInterval(yyyymmddhhmiss, 1000);
+    </script>
+</body>
+</html>
